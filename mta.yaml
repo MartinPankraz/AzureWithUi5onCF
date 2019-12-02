@@ -1,0 +1,31 @@
+ID: MTA-Azure-CF-Demo
+_schema-version: '2.1'
+version: 0.0.1
+
+modules:
+ - name: ui
+   type: html5
+   path: ui
+   parameters:
+      disk-quota: 256M
+      memory: 256M
+   build-parameters:
+      builder: grunt
+   requires:
+    - name: uaa_MTA-Azure-CF-Demo
+    - name: dest_MTA-Azure-CF-Demo
+
+resources:
+ - name: uaa_MTA-Azure-CF-Demo
+   parameters:
+      path: ./xs-security.json
+      service-plan: application
+      service: xsuaa
+   type: org.cloudfoundry.managed-service
+
+ - name: dest_MTA-Azure-CF-Demo
+   parameters:
+      service-plan: lite
+      service: destination
+   type: org.cloudfoundry.managed-service
+
