@@ -9,7 +9,7 @@ sap.ui.define([
 		},
 		
 		openGitHub: function(oEvent){
-			window.open("https://github.com/MartinPankraz/AzureWithUi5onCF");
+			window.open("https://dev.azure.com/mapankra/SAPUI5onAzure");
 		}
 	});
 });
