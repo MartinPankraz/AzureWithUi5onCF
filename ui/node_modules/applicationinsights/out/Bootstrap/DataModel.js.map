@@ -1,0 +1,1 @@
+{"version":3,"file":"DataModel.js","sourceRoot":"","sources":["../../Bootstrap/DataModel.ts"],"names":[],"mappings":"","sourcesContent":["export interface AgentLogger {\r\n    log(message?: any, ...optional: any[]): void;\r\n    error(message?: any, ...optional: any[]): void;\r\n}\r\n"]}
