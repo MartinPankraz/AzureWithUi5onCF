@@ -1,6 +1,15 @@
 {
   "welcomeFile": "/webapp/index.html",
   "routes": [
+  	{
+      "path": "/aws",
+      "target": {
+        "type": "destination",
+        "name": "AWS",
+        "entryPath" : "/"
+      },
+      "description": "AWS Destination"
+    },
     {
       "path": "/resources",
       "target": {
