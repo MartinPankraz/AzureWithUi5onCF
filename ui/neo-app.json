@@ -1,4 +1,8 @@
 {
+  "headerWhiteList": [
+		"traceparent",
+		"Request-Context"
+	],
   "welcomeFile": "/webapp/index.html",
   "routes": [
   	{
@@ -9,6 +13,15 @@
         "entryPath" : "/"
       },
       "description": "AWS Destination"
+    },
+    {
+      "path": "/nginx",
+      "target": {
+        "type": "destination",
+        "name": "nginx",
+        "entryPath" : "/"
+      },
+      "description": "SCC Destination"
     },
     {
       "path": "/resources",
