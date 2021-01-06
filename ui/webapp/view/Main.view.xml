@@ -4,7 +4,7 @@
 			<pages>
 				<Page id="page" title="{i18n>title}">
 					<headerContent>
-						<Button icon="sap-icon://hint" press="openGitHub" />
+						<Button enabled="true" icon="sap-icon://hint" press="openGitHub" />
 					</headerContent>
 					<content>
 						<Image src="css/azure-cf-ui5.png"></Image>
