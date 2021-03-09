@@ -68,6 +68,9 @@ sap.ui.define([
 		        	console.log("error "+JSON.stringify(data));
 		        }
 			});*/
+		},
+		test: function(oEvent){
+			window.open("https://dev.azure.com/mapankra/SAPUI5onAzure");
 		}
 	});
 });
