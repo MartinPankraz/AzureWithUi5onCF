@@ -23,8 +23,8 @@ sap.ui.define([
 				datafile: window.optimizelyDatafile,
 			});
 			var enabled = this.optimizelyClientInstance.isFeatureEnabled('phone', 'mapankra-msft-20210325');
+			var phone_button = this.getView().byId("myPhone");
 			if(enabled){
-				var phone_button = this.getView().byId("myPhone");
 				phone_button.setEnabled(enabled);
 			}else{
 				phone_button.setEnabled(false);
