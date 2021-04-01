@@ -5,7 +5,7 @@
 				<Page id="page" title="{i18n>title}">
 					<headerContent>
 						<Button enabled="true" icon="sap-icon://hint" press="openGitHub" />
-						<!--<Button id="myPhone" enabled="false" icon="sap-icon://phone" press="test" />-->
+						<Button id="myPhone" enabled="false" icon="sap-icon://phone" press="test" />
 					</headerContent>
 					<content>
 						<Image src="css/azure-cf-ui5.png"></Image>
